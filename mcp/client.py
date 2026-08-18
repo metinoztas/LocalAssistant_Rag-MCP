@@ -35,6 +35,9 @@ async def main():
             for tool in tools.tools:
                 print(f"- {tool.name}")
 
+
+            # ---------- "search_files"
+
             result = await session.call_tool(
                 "search_files",
                 {"query": "unity"}
@@ -43,6 +46,8 @@ async def main():
             print("\nArama sonuçları:")
             print(result)
             
+
+            # ---------- "get_file_info"
 
             result = await session.call_tool(
                 "get_file_info",
@@ -54,6 +59,18 @@ async def main():
             print("\nDosya bilgisi:")
             print(result)
 
+
+            # ---------- "search_content"
+
+            result = await session.call_tool(
+                "search_content",
+                {
+                    "query": "embedding"
+                }
+            )
+
+            print("\nİçerik arama sonuçları:")
+            print(result)
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -97,5 +97,43 @@ def get_file_info(file_path: str) -> dict:
         "modified": time.ctime(stat.st_mtime)
     }
 
+
+@mcp.tool()
+def search_content(query: str) -> list[dict]:
+    """
+    İzin verilen klasörlerde metin içeriğine göre bütün dosyaları tarıyıp 
+    eğer içerisinde quey'nin geçtiği bir dosya bulursa dosyanın ismini ve yolunu result değişkenine atıyor.
+    """
+
+    results = []
+
+    for allowed_path in ALLOWED_PATHS:
+
+        if not allowed_path.exists():
+            continue
+
+        for file in allowed_path.rglob("*"):
+
+            if not file.is_file() or not is_allowed_path(file):
+                continue
+
+            try:
+                text = file.read_text(
+                    encoding="utf-8",
+                    errors="ignore"
+                )
+            except (OSError, UnicodeError):
+                continue
+
+            if query.lower() in text.lower():
+                results.append({
+                    "name": file.name,
+                    "path": str(file.resolve())
+                })
+
+    return results
+
+
+
 if __name__ == "__main__":
     mcp.run()
