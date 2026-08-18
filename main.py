@@ -143,39 +143,35 @@ def main():
             for result in results
         )
 
-        prompt = f"""
-        You are a helpful AI assistant.
+        system_message = (
+            "You are a helpful AI assistant.\n"
+            "Rules:\n"
+            "- Use ONLY the information provided in the context.\n"
+            "- Never make up information.\n"
+            "- If the answer cannot be found in the context, say that you don't know.\n"
+            "- If the user asks in Turkish, answer in Turkish.\n"
+            "- If the user asks in English, answer in English.\n"
+            "- Keep your answer clear and concise.\n"
+            "- If the context contains the answer, answer confidently.\n"
+            "- Do not mention the context unless the user asks for the source.\n"
+            "- If multiple context chunks contain information about the same topic, "
+            "combine them into a single answer.\n"
+            "- Do not repeat the same information.\n"
+            "- Avoid repeating sentences.\n"
+            "- If examples are unrelated to the question, ignore them.\n"
+            "- Answer directly without any internal reasoning or thinking tags."
+        )
 
-        Rules:
-        - Use ONLY the information provided in the context.
-        - Never make up information.
-        - If the answer cannot be found in the context, say that you don't know.
-        - If the user asks in Turkish, answer in Turkish.
-        - If the user asks in English, answer in English.
-        - Keep your answer clear and concise.
-        - If the context contains the answer, answer confidently.
-        - Do not mention the context unless the user asks for the source.
-        - If multiple context chunks contain information about the same topic,
-          combine them into a single answer.
+        prompt = f"""Context:
+{context}
 
-        - Do not repeat the same information.
+Question:
+{question}
 
-        - Avoid repeating sentences.
-
-        - If examples are unrelated to the question,
-          ignore them.
-
-        Context:
-        {context}
-
-        Question:
-        {question}
-
-        Answer:
-        """
+Answer:"""
 
         try : 
-            return llm.ask(prompt), sources
+            return llm.ask(prompt, system_message=system_message), sources
         except Exception:    
             raise
 
