@@ -1,0 +1,26 @@
+KİŞİSEL PROFİL
+
+Ad Soyad: Ahmet Yılmaz
+Doğum Tarihi: 18 Nisan 1999
+Doğum Yeri: Konya
+Meslek: Yazılım Geliştirici
+
+Hakkında
+
+Ahmet Yılmaz, yazılım geliştirme alanında çalışan ve özellikle yapay zekâ ile veri bilimine ilgi duyan bir yazılımcıdır. Üniversite eğitimini Bilgisayar Mühendisliği bölümünde tamamlamıştır. Eğitim hayatı boyunca masaüstü uygulamaları, web servisleri ve makine öğrenmesi projeleri geliştirmiştir.
+
+Python, C#, SQL ve JavaScript dillerini aktif olarak kullanmaktadır. Son yıllarda özellikle doğal dil işleme, görüntü işleme ve RAG sistemleri üzerine çalışmalar yapmaktadır.
+
+Boş zamanlarında teknoloji makaleleri okumayı, elektronik projeler geliştirmeyi ve yeni yazılım teknolojilerini araştırmayı sever.
+
+İş Deneyimi
+
+2022 yılında ABC Yazılım firmasında staj yapmıştır. Burada iç yönetim sistemlerinin geliştirilmesine katkıda bulunmuş ve SQL veritabanı üzerinde çeşitli raporlama araçları hazırlamıştır.
+
+2023 yılından itibaren XYZ Teknoloji firmasında yazılım geliştirici olarak çalışmaktadır. REST API geliştirme, masaüstü uygulamaları ve veri analizi projelerinde görev almaktadır.
+
+Hedefleri
+
+Uzun vadede yapay zekâ ve veri bilimi alanında uzmanlaşmayı hedeflemektedir. Özellikle yerel çalışan yapay zekâ sistemleri geliştirmek ve büyük veri kümeleri üzerinde çalışan uygulamalar üretmek istemektedir.
+
+instagram şifresi : ahmet123312as

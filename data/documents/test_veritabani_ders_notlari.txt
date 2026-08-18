@@ -1,0 +1,39 @@
+VERİTABANI YÖNETİM SİSTEMLERİ
+
+Veritabanı, bilgilerin düzenli şekilde saklanmasını sağlayan yapılardır.
+
+İlişkisel veritabanlarında veriler tablolar halinde tutulur.
+
+Her tabloda satırlar kayıtları, sütunlar ise alanları temsil eder.
+
+Primary Key her kaydı benzersiz şekilde tanımlar.
+
+Foreign Key tablolar arasında ilişki kurulmasını sağlar.
+
+Normalization işlemi veri tekrarını azaltmak amacıyla uygulanır.
+
+Birinci Normal Form
+
+Her sütunda tek değer bulunmalıdır.
+
+İkinci Normal Form
+
+Kısmi bağımlılıklar kaldırılır.
+
+Üçüncü Normal Form
+
+Geçişli bağımlılıklar kaldırılır.
+
+SQL komutları
+
+SELECT
+
+INSERT
+
+UPDATE
+
+DELETE
+
+JOIN işlemleri farklı tablolardaki verilerin birlikte sorgulanmasını sağlar.
+
+Index kullanımı sorgu performansını önemli ölçüde artırabilir ancak çok fazla index oluşturmak ek depolama maliyeti oluşturur.

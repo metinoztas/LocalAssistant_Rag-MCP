@@ -1,0 +1,37 @@
+PROJE TOPLANTI NOTLARI
+
+Toplantı Tarihi
+
+12 Mart 2026
+
+Katılımcılar
+
+Proje Yöneticisi
+
+Yazılım Geliştirici
+
+Test Uzmanı
+
+Arayüz Tasarımcısı
+
+Toplantı Özeti
+
+Belge yükleme modülü başarıyla tamamlandı.
+
+PDF, Word, PowerPoint ve metin dosyalarının sisteme yüklenebildiği doğrulandı.
+
+Chunk boyutu farklı değerlerde test edildi. Yaklaşık beş yüz karakterlik parçaların en iyi sonucu verdiği gözlemlendi.
+
+Hybrid Search yöntemi yalnızca semantik aramaya göre daha başarılı sonuçlar üretti.
+
+Arayüz tarafında kaynak gösteriminin kullanıcı güvenini artırdığı değerlendirildi.
+
+Bir sonraki sürüm için yapılacaklar
+
+Belge silme özelliği
+
+Arama geçmişi
+
+Daha ayrıntılı hata mesajları
+
+Performans testleri

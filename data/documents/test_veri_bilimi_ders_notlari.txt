@@ -1,0 +1,31 @@
+VERİ BİLİMİ DERS NOTLARI
+
+Veri bilimi, verilerden anlamlı bilgiler elde etmeyi amaçlayan disiplinler arası bir çalışma alanıdır. İstatistik, bilgisayar bilimi ve makine öğrenmesi yöntemlerinden yararlanılır.
+
+Bir veri bilimi projesi genellikle şu adımlardan oluşur:
+
+Problemin belirlenmesi
+
+Verinin toplanması
+
+Veri temizleme
+
+Keşifsel veri analizi
+
+Özellik mühendisliği
+
+Model eğitimi
+
+Model değerlendirme
+
+Modelin gerçek ortamda kullanılması
+
+Sınıflandırma problemlerinde Accuracy, Precision, Recall ve F1 Score en sık kullanılan performans metrikleridir.
+
+Regresyon problemlerinde MAE, MSE, RMSE ve R² Score kullanılır.
+
+Overfitting problemi modelin eğitim verisini ezberlemesi sonucunda ortaya çıkar. Bu durum yeni veriler üzerinde başarının düşmesine neden olur.
+
+Overfitting'i azaltmak için çapraz doğrulama, düzenlileştirme, daha fazla veri toplama ve özellik seçimi yöntemleri kullanılabilir.
+
+Feature Engineering veri biliminin en önemli aşamalarından biridir. Doğru özellikler seçildiğinde model başarısı önemli ölçüde artabilir.

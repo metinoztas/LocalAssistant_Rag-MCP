@@ -1,0 +1,15 @@
+KİŞİSEL GÜNLÜK
+
+Pazartesi
+
+Bugün uzun zamandır üzerinde çalıştığım yapay zekâ projesine devam ettim. Öncelikle belge işleme modülünde bazı performans iyileştirmeleri yaptım. Daha sonra farklı embedding modellerini karşılaştırarak hangisinin daha iyi sonuç verdiğini test ettim.
+
+Öğleden sonra kullanıcı arayüzü üzerinde çalıştım. Belgelerin hangi kaynaktan geldiğini gösterecek yeni bir alan ekledim. Bu sayede kullanıcı verilen cevabın hangi belgeye dayandığını görebiliyor.
+
+Akşam saatlerinde hata yönetimi kısmını geliştirdim. Beklenmeyen durumlarda uygulamanın tamamen kapanması yerine kullanıcıya anlaşılır hata mesajları göstermesini sağladım.
+
+Salı
+
+Bugün Retrieval algoritmasının doğruluğunu test ettim. Aynı soruyu farklı belgeler üzerinde deneyerek en doğru sonuçları veren chunk boyutunu belirlemeye çalıştım. Ayrıca uygulamanın daha okunabilir olması için arayüzde yazı tiplerini ve renkleri düzenledim.
+
+Günün sonunda kod yapısını yeniden gözden geçirerek gereksiz tekrarları kaldırdım ve proje klasörlerini daha düzenli hale getirdim.
