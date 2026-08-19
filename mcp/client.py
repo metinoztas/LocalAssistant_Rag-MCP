@@ -1,7 +1,8 @@
 import asyncio
-
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
+import sys
+
 
 
 async def main():
@@ -11,8 +12,8 @@ async def main():
 
     # MCP server'ın nasıl başlatılacağını tanımla
     server_params = StdioServerParameters(
-        command="python",
-        args=["mcp/server.py"]
+        command=sys.executable,
+        args=["server.py"]
     )
 
     # Server'a stdio üzerinden bağlan
@@ -36,17 +37,23 @@ async def main():
                 print(f"- {tool.name}")
 
 
+
+
+            print("*"*20)
             # ---------- "search_files"
 
             result = await session.call_tool(
                 "search_files",
-                {"query": "unity"}
+                {"query": "python"}
             )
 
             print("\nArama sonuçları:")
             print(result)
-            
 
+
+
+            
+            print("*"*20)
             # ---------- "get_file_info"
 
             result = await session.call_tool(
@@ -60,6 +67,8 @@ async def main():
             print(result)
 
 
+
+            print("*"*20)
             # ---------- "search_content"
 
             result = await session.call_tool(
@@ -70,7 +79,59 @@ async def main():
             )
 
             print("\nİçerik arama sonuçları:")
+
+            results = result.structured_content.get("result", [])
+
+            for item in results:
+                print(f"- {item['name']}")
+                print(f"  {item['path']}")
+
+
+
+
+            print("*"*20)
+            #---------------- list_directory
+
+            result = await session.call_tool(
+                "list_directory",
+                {
+                    "directory_path": r"C:\Users\metin\Documents"
+                }
+            )
+
+            print("\nKlasör içeriği:")
             print(result)
+
+
+            print("*"*20)
+            # ----------------- get_recent_files
+
+            result = await session.call_tool(
+                "get_recent_files",
+                {
+                    "limit": 5
+                }
+            )
+
+            print("\nSon değiştirilen dosyalar:")
+            print(result)
+
+
+            print("*"*20)
+            # ------------------ get_rag_index_status
+
+            result = await session.call_tool(
+                "get_rag_index_status",
+                {
+                    "file_path": r"C:\Users\metin\Documents\28102826_Python-Ders-Notlari-1.pdf"
+                }
+            )
+
+            print("\nRAG indeks durumu:")
+            print(result)
+
+
+
 
 if __name__ == "__main__":
     asyncio.run(main())
